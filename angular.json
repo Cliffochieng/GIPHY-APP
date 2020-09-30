@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GIPHY-APP"
+    }
+  },
+  "defaultProject": "GIPHY-APP",
+  "cli": {
+    "analytics": "4adcf4b2-923d-4d00-9481-76b2c4ccb643"
+  }
 }
