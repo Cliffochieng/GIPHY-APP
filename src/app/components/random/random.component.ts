@@ -11,6 +11,10 @@ export class RandomComponent implements OnInit {
   constructor(private servive: GiphyService) { }
 
   ngOnInit(): void {
+    this.servive.randomGif()
+    .subscribe(response => {
+      this.randomGif = response['data'];
+    });
   }
 
 }
