@@ -8,7 +8,7 @@ import { GiphyService } from 'src/app/services/giphy.service';
 })
 export class RandomComponent implements OnInit {
 
-  constructor() { }
+  constructor(private servive: GiphyService) { }
 
   ngOnInit(): void {
   }
