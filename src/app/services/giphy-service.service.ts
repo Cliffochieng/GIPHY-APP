@@ -17,11 +17,11 @@ export class GiphyService {
   }
 
   trendingGifs() {
-    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${this.apiKey}&limit=50&rating=G`);
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${this.apiKey}&limit=25&rating=g`);
   }
 
   randomGif() {
-    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=${this.apiKey}&tag=&rating=R`);
+    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=${this.apiKey}&tag=&rating=g`);
   }
 
   searchGifs(query: string) {
