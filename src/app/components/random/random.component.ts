@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GiphyService } from 'src/app/services/giphy.service';
+import { GiphyService } from 'src/app/services/giphy-service.service';
 
 @Component({
   selector: 'app-random',
@@ -7,6 +7,7 @@ import { GiphyService } from 'src/app/services/giphy.service';
   styleUrls: ['./random.component.css']
 })
 export class RandomComponent implements OnInit {
+  randomGif: any;
 
   constructor(private servive: GiphyService) { }
 
